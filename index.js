@@ -1,0 +1,7 @@
+'use strict';
+var APP_ID = undefined;
+var AlexaSkill = require('./AlexaSkill');
+var GreeterService = function() {
+AlexaSkill.call(this, APP_ID);
+};
+GreeterService.prototype = Object.create(AlexaSkill.prototype);
